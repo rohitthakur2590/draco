@@ -1,0 +1,17 @@
+name: tox
+
+on: push
+
+jobs:
+  super-lint:
+    name: Lint Code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        
+      - name: Run tox
+        uses: github/super-linter@v3.17.0
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

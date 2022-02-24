@@ -1,10 +1,9 @@
 from netmiko import ConnectHandler
 
-'''
-Connect to device
-Execute 'show version'
-Display output
-'''
+# Connect to device
+# Execute 'show version'
+# Display output
+
 # device = ConnectHandler(device_type='juniper_junos', ip='192.168.122.196', username='vagrant', password='Vagrant')
 #
 # output  = device.send_command('show version')

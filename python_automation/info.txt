@@ -1,0 +1,9 @@
+Q1. How to install netmiko ?
+    Ans: fedora# pip install netmiko
+
+
+Depending upon the selection of the platform type, Netmiko can understand the returned prompt
+and the correct way to SSH into the specific device. Once the connection is made,
+we can send commands to the device using the send_command method.
+
+reference: https://hub.packtpub.com/using-python-automation-to-interact-with-network-devices-tutorial/
